@@ -1,0 +1,247 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/*Header Part*/
+
+.container{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+header{
+        background-color: rgb(240,120,11);
+        height: 100px;
+        position: sticky;
+        top:0;
+        z-index: 100;
+        box-shadow: 5px 5px 5px;  
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+}
+
+nav ul{
+     display: flex;
+     gap: 50px;
+}
+
+.name{
+    font-size:65px;
+    font-weight: 400;
+    padding-bottom: 20px;
+
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    scale: 1.3;
+}
+
+
+
+/*slide1*/
+.hero-section{
+    background-image: url("Heroimg.avif");
+    height: 100vh;
+    display:grid;
+    color:white;
+    place-items: center;
+    background-repeat: no-repeat;
+    max-width: 10000px;
+    max-height: 10000px;
+    background-size: cover;
+}
+.hero-section .container{
+      display:flex;
+      flex-direction: column;
+      gap:30px; 
+
+}
+.hero-section h1{
+    font-size: 96px ;
+    margin-left: 100px;
+    
+}
+.hero-section h3{
+    font-size: 50px;
+}
+
+/*slide2*/
+.artist-section{
+    padding-top: 50px;
+    background-color: rgb(35,35,35);
+}
+.artist-section .container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    color: rgb(249,249,249);
+}
+.person{
+    position: relative;
+    max-height: 500px;
+    max-width: 600px;
+
+}
+button{
+    padding: 10px 15px;
+    border:none;
+    transition:0.2s ease-in-out;
+    border-radius: 2cap;
+
+}
+button:hover{   
+      transition: 0.2s ease-in-out;
+      opacity:0.8;
+
+}
+.primary-btn{
+background-color: red;
+color: white;
+}
+
+
+
+
+/*slide3*/
+.grrid{
+    background: linear-gradient(-1.5deg, rgb(236, 78, 2), rgb(236, 78, 2), rgb(236, 78, 2), rgb(236, 79, 3), rgb(236, 80, 3), rgb(236, 81, 4), rgb(235, 84, 6), rgb(235, 88, 9), rgb(234, 92, 12), rgb(234, 98, 16), rgb(233, 106, 22), rgb(232, 115, 28), rgb(231, 126, 36), rgb(229, 139, 45), rgb(227, 154, 56), rgb(225, 172, 69), rgb(223, 192, 83), rgb(229, 203, 113), rgb(234, 213, 140), rgb(238, 221, 163), rgb(242, 228, 182), rgb(245, 235, 199), rgb(247, 240, 213), rgb(249, 244, 224), rgb(251, 247, 234), rgb(252, 250, 241), rgb(253, 252, 246), rgb(254, 253, 250), rgb(255, 254, 252), rgb(255, 255, 254), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+.grid{
+    display:grid;
+    gap: 0px;
+    grid-template-areas: 
+    "I1 I2 I3 I4 I5  "
+    "I6 I7 I8 I9 I10";
+    align-items: center;
+    white-space: 0;
+}
+.item1{
+    grid-area: I1;
+
+}
+.item2{
+    grid-area: I2;
+
+}
+.item3{
+    grid-area: I3;
+
+}
+.item4{
+    grid-area: I4;
+
+}
+.item5{
+    grid-area: I5;
+
+}
+.item6{
+    grid-area: I6;
+
+}
+.item7{
+    grid-area: I7;
+
+}
+.item8{
+    grid-area: I8;
+
+}
+.item9{
+    grid-area: I9;
+
+}
+.item10{
+    grid-area: I10;
+    
+
+}
+.grrid{
+    padding-top: 180px;
+    background-color: rgb(240,120,11);
+    padding-left: 60px;
+}
+.grid-image:hover{
+    transform:scale(1.05);
+    
+
+}
+.parallax{
+    background-image: url(concert.jpg);
+    min-height: 100%;
+    background-size: cover;
+    height:1000px;
+
+
+}
+.textbg{
+
+    text-align: center;
+    padding: 150px 120px;
+    color: white;
+    width:75%;
+    min-width: 350px;
+    font-size: 60pt;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.start_icon{
+    position: absolute;
+    color:black;
+    font-size: 2rem;
+    cursor:pointer;
+    left: 50%;
+    bottom: 50%;
+    cursor:pointer;
+}
+.overlay{
+    
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    transition: 0.3s ease;
+    background-color: transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.overlay:hover{
+    opacity: 0.7;
+}
+.container1{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+@media only screen and (min-width: 600px) {
+    
+    
+    
+}
